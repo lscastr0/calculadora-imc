@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora IMC</h1>
+    </header>
+
+    <section class="main">
+       <div class="responsive-table">
+           <table>
+               <thead>
+                   <th>
+                       <tr>
+                           <td>IMC</td>
+                           <td>Resultado</td>
+                       </tr>
+                   </th>
+               </thead>
+
+               <tbody>
+                   <tr>
+                       <td>Menos que 18,5</td>
+                       <td>Abaixo do peso</td>
+                   </tr>
+                   <tr>
+                    <td>Entre 18,5 e 24,9</td>
+                    <td>Peso normal</td>
+                </tr>
+                <tr>
+                    <td>Entre 25 e 29,9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>Entre 30 e 34,9</td>
+                    <td>Obesidade grau 1</td>
+                </tr>
+                <tr>
+                    <td>Entre 35 e 39,9</td>
+                    <td>Obesidade grau 2</td>
+                </tr>
+                <tr>
+                    <td>Mais do que 40</td>
+                    <td>Obesidade grau 3</td>
+                </tr>
+               </tbody>
+           </table>
+       </div>
+
+       <section class="content">
+           <h2>Calcule seu IMC</h2>
+           <p>
+               <label for="peso">Peso:</label>
+               <input type="text" name="peso" id="weight">
+           </p>
+           <p>
+               <label for="altura">Altura:</label>
+               <input type="text" name="altura" id="height">
+           </p>
+
+           <p class="btn">
+               <button id="btn">Calcular</button>
+           </p>
+
+           <p id="answer"></p>
+       </section>
+
+
+    </section>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
